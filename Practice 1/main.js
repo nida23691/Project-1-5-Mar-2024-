@@ -45,23 +45,59 @@ for (var _i = 0, names_1 = names; _i < names_1.length; _i++) {
     console.log("Hello ".concat(name_1, ", would you like to learn some CSS today?"));
 }
 // --------------------------------------------------------------------------------------------------------------------
-// let transports= ["Toyota motorcycle", "Yamha car", "bykia bicycle"]
-// transports.forEach(transport => {
-//    console.log(`I would like to own a ${transport}.`)
-// })
+let transports= ["Toyota motorcycle", "Yamha car", "bykia bicycle"]
+transports.forEach(transport => {
+    console.log(`I would like to own a ${transport}.`)
+})
 // ----------------------------------------------------------------------------------------------------------------------
-// var guests = ["Newtons", "John Jackson", "Queen Victoria"];
-// guests.forEach(function (guest) {
-//    console.log("Dear ".concat(guest, ", would you like to join me for dinner?"));
-// });
+var guests = ["Newtons", "John Jackson", "Queen Victoria"];
+guests.forEach(function (guest) {
+    console.log("Dear ".concat(guest, ", would you like to join me for dinner?"));
+});
 // ----------------------------------------------------------------------------------------------------------------------
-// var unableToAttend = "Newtons";
-// console.log("".concat(unableToAttend, " can't make it to dinner."));
+var unableToAttend = "Newtons";
+console.log("".concat(unableToAttend, " can't make it to dinner."));
 // Replace the guest
-// var newGuest = "John Jackson";
-// guests[guests.indexOf(unableToAttend)] = newGuest;
+var newGuest = "John Jackson";
+guests[guests.indexOf(unableToAttend)] = newGuest;
 // New invitations
-// guests.forEach(function (guest) {
-//    console.log("Dear ".concat(guest, ", would you like to join me for dinner?"));
-// });
+guests.forEach(function (guest) {
+    console.log("Dear ".concat(guest, ", would you like to join me for dinner?"));
+});
+// ----------------------------------------------------------------------------------------------------------------------
+let guests= ["Newtons", "John Jackson", "Queen Victoria"]
+console.log("Great news! I found a bigger dinner table!")
+// Adding more guests
+guests.unshift("Maria Epic")
+guests.splice(guests.length / 2, 0, "Olevia David")
+guests.push("Eda Yaldis")
+guests.forEach(guest => {
+    console.log(`Dear ${guest}, would you like to join me for dinner?`)
+})
+// ----------------------------------------------------------------------------------------------------------------------
+// console.log("Unfortunately, I can only invite two people for dinner.")
+while (guests.length > 2) {
+    let removedGuest = guests.pop()
+    console.log(`Sorry, ${removedGuest}, I can't invite you to dinner.`)
+}
+guests.forEach(guest => {
+    console.log(`Dear ${guest}, you're still invited to dinner.`)
+})
+guests.splice(0, guests.length)
+console.log(guests) // Shows an empty list
+// ----------------------------------------------------------------------------------------------------------------------
+var places = ["Sigapore", "China", "United States", "United Kingdom", "Island"];
+console.log("Orignal order:", places);
+console.log("Alphabetical order:", __spreadArray([], places, true).sort());
+console.log("Orignal order:", places);
+console.log("Reverse alphabetical order:", __spreadArray([], places, true).sort().reverse());
+console.log("Orignal order:", places);
+places.reverse();
+console.log("Reversed order:", places);
+places.reverse();
+console.log("Original order:", places);
+places.sort();
+console.log("Alphabetical order:", places);
+places.reverse();
+console.log("Reverse alphabetical order:", places);
 // ----------------------------------------------------------------------------------------------------------------------
