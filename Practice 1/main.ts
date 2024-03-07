@@ -47,3 +47,27 @@ for (let name of names) {
     console.log(`Hello ${name}, would you like to learn some CSS today?`)
 }
 // --------------------------------------------------------------------------------------------------------------------
+// let transports= ["Toyota motorcycle", "Yamha car", "bykia bicycle"]
+
+// transports.forEach(transport => {
+//    console.log(`I would like to own a ${transport}.`)
+// })
+// ----------------------------------------------------------------------------------------------------------------------
+// let guests= ["Newtons", "John Jackson", "Queen Victoria"]
+
+// guests.forEach(guest => {
+//    console.log(`Dear ${guest}, would you like to join me for dinner?`)
+// })
+// ----------------------------------------------------------------------------------------------------------------------
+// let unableToAttend= "Newtons"
+// console.log(`${unableToAttend} can't make it to dinner.`)
+
+// Replace the guest
+// let newGuest= "John Jackson"
+// guests[guests.indexOf(unableToAttend)] = newGuest
+
+// New invitations
+// guests.forEach(guest => {
+//    console.log(`Dear ${guest}, would you like to join me for dinner?`)
+// })
+// ----------------------------------------------------------------------------------------------------------------------
