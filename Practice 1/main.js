@@ -75,7 +75,7 @@ guests.forEach(guest => {
     console.log(`Dear ${guest}, would you like to join me for dinner?`)
 })
 // ----------------------------------------------------------------------------------------------------------------------
-// console.log("Unfortunately, I can only invite two people for dinner.")
+console.log("Unfortunately, I can only invite two people for dinner.")
 while (guests.length > 2) {
     let removedGuest = guests.pop()
     console.log(`Sorry, ${removedGuest}, I can't invite you to dinner.`)
