@@ -101,3 +101,16 @@ console.log("Alphabetical order:", places);
 places.reverse();
 console.log("Reverse alphabetical order:", places);
 // ----------------------------------------------------------------------------------------------------------------------
+let guests= ["Newtons", "John Jackson", "Queen Victoria", "Eda Yaldis", "Olevia Eric"]
+console.log(`I am inviting ${guests.length} people to dinner.`)
+// ----------------------------------------------------------------------------------------------------------------------
+let countries= ["Singapore", "England", "Malayshia", "Europe", "India"]
+console.log("Countries I'd like to visit:", countries)
+// ----------------------------------------------------------------------------------------------------------------------
+var book = (_a = {
+    title: "The Horror Stories",
+    author: "Minhaj Ali Askari",
+    yearPublished: 1940
+}, string = _a.title, string = _a.author, number = _a.yearPublished, _a);
+console.log("Book Info: ".concat(book.title, " by ").concat(book.author, ", published in\n").concat(book.yearPublished));
+// ----------------------------------------------------------------------------------------------------------------------
