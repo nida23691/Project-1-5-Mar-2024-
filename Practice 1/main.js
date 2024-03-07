@@ -45,3 +45,23 @@ for (var _i = 0, names_1 = names; _i < names_1.length; _i++) {
     console.log("Hello ".concat(name_1, ", would you like to learn some CSS today?"));
 }
 // --------------------------------------------------------------------------------------------------------------------
+// let transports= ["Toyota motorcycle", "Yamha car", "bykia bicycle"]
+// transports.forEach(transport => {
+//    console.log(`I would like to own a ${transport}.`)
+// })
+// ----------------------------------------------------------------------------------------------------------------------
+// var guests = ["Newtons", "John Jackson", "Queen Victoria"];
+// guests.forEach(function (guest) {
+//    console.log("Dear ".concat(guest, ", would you like to join me for dinner?"));
+// });
+// ----------------------------------------------------------------------------------------------------------------------
+// var unableToAttend = "Newtons";
+// console.log("".concat(unableToAttend, " can't make it to dinner."));
+// Replace the guest
+// var newGuest = "John Jackson";
+// guests[guests.indexOf(unableToAttend)] = newGuest;
+// New invitations
+// guests.forEach(function (guest) {
+//    console.log("Dear ".concat(guest, ", would you like to join me for dinner?"));
+// });
+// ---------------------------------------------------------------------------------------------------------------------
