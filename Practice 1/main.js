@@ -114,3 +114,37 @@ var book = (_a = {
 }, string = _a.title, string = _a.author, number = _a.yearPublished, _a);
 console.log("Book Info: ".concat(book.title, " by ").concat(book.author, ", published in\n").concat(book.yearPublished));
 // ----------------------------------------------------------------------------------------------------------------------
+let friends = ["John", "Eda", "Maria"]
+console.log(friends[3]) // Intentional error: Arrays are zero-indexed, so index 3 is out of bounds.
+friends[2] = "Maria" // Correcting the error by accessing a valid index.
+// ----------------------------------------------------------------------------------------------------------------------
+let car= 'mehran'
+console.log("Is car == 'mehran'? I predict True.")
+console.log(car == 'mehran') // True
+console.log("Is car == 'honda'? I predict False.")
+console.log(car == 'honda') // False
+// Create at least 10 tests. Have at least 5 tests evaluate to True and another 5 tests evaluate to False.
+// ----------------------------------------------------------------------------------------------------------------------
+// Equality with strings
+console.log("Testing equality with strings:");
+console.log("orange" == "orange"); // True
+console.log("orange" == "orange"); // False
+// Using the lower case function
+console.log("Testing with lower case:");
+console.log("Orange".toLowerCase() == "orange"); // True
+// Numerical tests
+console.log("Numerical tests:");
+console.log(20 > 15); // True
+console.log(4 < 3); // False
+// Tests using "and" and "or" operators
+console.log("Tests with 'and' and 'or':");
+console.log(true && false); // False
+console.log(true || false); // True
+// Test whether an item is in a array
+var fruits = ["orange", "apple", "papaya"];
+console.log("Is 'orange' in fruits?");
+console.log(fruits.includes("orange")); // True
+// Test whether an item is not in a array
+console.log("Is 'watermelon' not in fruits?");
+console.log(!fruits.includes("watermelon")); // True
+// ----------------------------------------------------------------------------------------------------------------------
