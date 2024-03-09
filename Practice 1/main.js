@@ -22,9 +22,9 @@ console.log(4 * 2); // Multiplication
 console.log(16 / 2); // Division
 // ---------------------------------------------------------------------------
 console.log(5 + 3); // Addition
-console.log(23 - 15); // Addition
-console.log(2 * 4); // Addition
-console.log(32 / 4); // Addition
+console.log(23 - 15); // Substraction
+console.log(2 * 4); // Multiplication
+console.log(32 / 4); // Division
 // ---------------------------------------------------------------------------
 var favoriteNumber = 4; // This saves your favorite number
 console.log("My favorite number is ".concat(favoriteNumber, ".")); // This shows the message with your favorite number
