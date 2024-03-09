@@ -178,3 +178,54 @@ console.log(fruits.includes("orange")); // True
 console.log("Is 'watermelon' not in fruits?");
 console.log(!fruits.includes("watermelon")); // True
 // ----------------------------------------------------------------------------------------------------------------------
+let alien_color = "green"
+if (alien_color == "green") {
+    console.log("You just earned 10 points!")
+}
+
+alien_color = "red"
+if (alien_color == "green") {
+    // No output because the condition is false
+}
+// ----------------------------------------------------------------------------------------------------------------------
+alien_color = "green"
+if (alien_color == "green") {
+    console.log("You just earned 10 points for shooting the alien!")
+} else {
+    console.log("You just earned 5 points.")
+}
+
+alien_color = "yellow"
+if (alien_color == "green") {
+    console.log("You just earned 10 points for shooting the alien!")
+} else {
+    console.log("You just earned 5 points.")
+}
+// ----------------------------------------------------------------------------------------------------------------------
+alien_color = "green"
+if (alien_color == "green") {
+    console.log("You earned 10 points.");
+} else if (alien_color == "yellow") {
+    console.log("You earned 5 points.")
+} else if (alien_color == "red") {
+    console.log("You earned 20 points.")
+}
+
+alien_color = "yellow";
+if (alien_color == "green") {
+    console.log("You earned 10 points.");
+} else if (alien_color == "yellow") {
+    console.log("You earned 5 points.");
+} else if (alien_color == "red") {
+    console.log("You earned 20 points.");
+}
+
+alien_color = "red";
+if (alien_color == "green") {
+    console.log("You earned 10 points.");
+} else if (alien_color == "yellow") {
+    console.log("You earned 5 points.");
+} else if (alien_color == "red") {
+    console.log("You earned 20 points.");
+}
+// ----------------------------------------------------------------------------------------------------------------------
