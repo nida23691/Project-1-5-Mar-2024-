@@ -229,3 +229,46 @@ if (alien_color == "green") {
     console.log("You earned 20 points.");
 }
 // ----------------------------------------------------------------------------------------------------------------------
+let age: number = 28;
+
+if (age < 4) {
+    console.log("The person is a baby.");
+} else if (age < 8) {
+    console.log("The person is a toddler.");
+} else if (age < 14) {
+    console.log("The person is a kid.");
+} else if (age < 24) {
+    console.log("The person is a teenager.");
+} else if (age < 70) {
+    console.log("The person is an adult.");
+} else {
+    console.log("The person is an elder.");
+}
+// ----------------------------------------------------------------------------------------------------------------------
+let favorite_fruits: string[] = ["watermelon", "papaya", "orange"];
+
+for (let i = 0; i < favorite_fruits.length; i++) {
+    if (favorite_fruits[i] == "watermelon") {
+        console.log("watermelon is available");
+    }
+    else if (favorite_fruits[i] == "papaya") {
+        console.log("papaya is available");
+    }
+    else if (favorite_fruits[i] == "orange") {
+        console.log("orange is available");
+    }
+    else {
+        console.log("that fruit does not available");
+    }
+}
+// ----------------------------------------------------------------------------------------------------------------------
+let userNames: string[] = ["admin", "neha", "iqra", "sobia", "laiba"];
+
+userNames.forEach(userNames => {
+    if (userNames === "admin") {
+        console.log("Hello admin, would you like to see a status report?");
+    } else {
+        console.log(`Hello ${userNames}, welcome to my home.`);
+    }
+});
+// ----------------------------------------------------------------------------------------------------------------------
