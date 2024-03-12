@@ -277,3 +277,20 @@ numbers.forEach(function (number) {
     console.log("".concat(number).concat(suffix));
 });
 // ----------------------------------------------------------------------------------------------------------------------
+let pizzas: string[] = ["fajita", "cheesi pizza", "malai boti"];
+pizzas.forEach(pizza => {
+    console.log(`I like ${pizza} pizza.`);
+});
+console.log("I really love pizza!");
+// ----------------------------------------------------------------------------------------------------------------------
+let animals: string[] = ["duck", "cow", "pigeon"];
+animals.forEach(animal => {
+    console.log(`A ${animal} would make a great pet.`);
+});
+console.log("Any of these animals would make a great pet!");
+// ----------------------------------------------------------------------------------------------------------------------
+function make_shirt(size, message) {
+    console.log("Making a ".concat(size, " t-shirt with the message \"").concat(message, "\" printed on it."));
+}
+make_shirt("large", "Life is Coding without experience");
+// ----------------------------------------------------------------------------------------------------------------------
