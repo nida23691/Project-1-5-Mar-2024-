@@ -272,3 +272,37 @@ userNames.forEach(userNames => {
     }
 });
 // ----------------------------------------------------------------------------------------------------------------------
+let usernames: string[] = [];
+
+if (usernames.length === 1) {
+    console.log("We need to find some users!");
+} else {
+    // Greet users
+}
+// Removing all usernames ensures the message "We need to find some users!" is printed.
+// ----------------------------------------------------------------------------------------------------------------------
+let current_names: string[] = ["nazia", "admin", "ayeza", "noreen", "rabia"];
+let new_names: string[] = ["fiza", "huda", "hadaf", "sadaf", "shibra"];
+
+new_names.forEach(newName => {
+    if (current_names.some(currentName => currentName.toLowerCase() === newName.toLowerCase())) {
+        console.log(`${newName} will need to enter a new username.`);
+    } else {
+        console.log(`${newName} is available.`);
+    }
+});
+// ----------------------------------------------------------------------------------------------------------------------
+let numbers: number[] = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+
+numbers.forEach(number => {
+    let suffix = "th";
+    if (number === 10) {
+        suffix = "st";
+    } else if (number === 20) {
+        suffix = "nd";
+    } else if (number === 30) {
+        suffix = "rd";
+    }
+    console.log(`${number}${suffix}`);
+});
+// ----------------------------------------------------------------------------------------------------------------------
