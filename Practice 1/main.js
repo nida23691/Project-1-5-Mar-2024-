@@ -294,3 +294,24 @@ function make_shirt(size, message) {
 }
 make_shirt("large", "Life is Coding without experience");
 // ----------------------------------------------------------------------------------------------------------------------
+function make_shirt(size: string = "medium", message: string = "I love CSS") {
+    console.log(`Making a ${size} t-shirt with the message "${message}" printed on it.`);
+}
+make_shirt(); // Default large and message
+make_shirt("small"); // Default message, medium size
+make_shirt("large", "Coding is my passion"); // Custom message, small size
+// ----------------------------------------------------------------------------------------------------------------------
+function describe_city(city: string, country: string = "Pakistan") {
+    console.log(`${city} is in ${country}.`);
+}
+describe_city("Hyderabad");
+describe_city("Islamabad");
+describe_city("China", "Korea");
+// ----------------------------------------------------------------------------------------------------------------------
+function city_country(city, country) {
+    return "".concat(city, ", ").concat(country);
+}
+console.log(city_country("Karachi", "Pakistan"));
+console.log(city_country("China", "Korea"));
+console.log(city_country("London", "Singapore"));
+// ----------------------------------------------------------------------------------------------------------------------
