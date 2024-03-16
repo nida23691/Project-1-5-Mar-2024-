@@ -383,3 +383,27 @@ function make_car(manufacturer, model) {
 console.log(make_car("Honda", "Mehran", ["color", "black"], ["year", 2021]));
 console.log(make_car("Civics", "Sanobar", ["color", "yellow"], ["sunroof", true]));
 // ----------------------------------------------------------------------------------------------------------------------
+let laptop = {
+    make: "hp",
+    model: "4th Generation",
+    year: 2022,
+    describe: function() {
+        console.log(`This laptop is a ${this.year} ${this.make} ${this.model}.`);
+    }
+};
+laptop.describe();
+// ----------------------------------------------------------------------------------------------------------------------
+let laptops = [
+    { make: "hp", model: "4th Generation", year: 2022 },
+    { make: "lenovo", model: "3rd Generation", year: 2021 },
+    { make: "thinkpad", model: "5th Generation", year: 2020 }
+];
+let [laptop1, laptop2] = laptops;
+console.log(laptop1);
+console.log(laptop2);
+// ----------------------------------------------------------------------------------------------------------------------
+var pricesSet1 = [1400, 1700, 1300];
+var pricesSet2 = [3000, 1500, 1800];
+var combinedPrices = __spreadArray(__spreadArray([], pricesSet1, true), pricesSet2, true).sort(function (a, b) { return a - b; });
+console.log(combinedPrices);
+// ----------------------------------------------------------------------------------------------------------------------
