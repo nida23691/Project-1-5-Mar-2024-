@@ -342,3 +342,44 @@ function make_great(magicians) {
 make_great(magicians); // Modifies the original array
 show_magicians(magicians); // Shows modified names
 // ----------------------------------------------------------------------------------------------------------------------
+let magicians: string[] = ["John", "Eda", "Maria"];
+function make_great(magicians: string[]): string[] {
+  let greatMagicians = [];
+  magicians.forEach((magician) => {
+    greatMagicians.push(`${magician} The Love Once CSS`);
+  });
+return greatMagicians;
+}
+function show_magicians(magicians: string[]) {
+  magicians.forEach((magician) => {
+    console.log(magician);
+  });
+}
+let greatMagicians = make_great(magicians.slice()); // Creates a new modified array
+console.log("Real magicians:");
+show_magicians(magicians); // Shows original names
+console.log("Unique magicians:");
+show_magicians(greatMagicians); // Shows modified names
+// ----------------------------------------------------------------------------------------------------------------------
+function make_sandwich(...items: string[]) {
+    console.log(`Making a sandwich with: ${items.join(', ')}.`);
+}
+make_sandwich("zinger", "kabab");
+make_sandwich("japan", "boti", "chicken");
+make_sandwich("shimla", "chatpata", "maiyonese", "chilli");
+// ----------------------------------------------------------------------------------------------------------------------
+function make_car(manufacturer, model) {
+    var options = [];
+    for (var _i = 2; _i < arguments.length; _i++) {
+        options[_i - 2] = arguments[_i];
+    }
+    var car = { manufacturer: manufacturer, model: model };
+    options.forEach(function (_a) {
+        var key = _a[0], value = _a[1];
+        return car[key] = value;
+    });
+    return car;
+}
+console.log(make_car("Honda", "Mehran", ["color", "black"], ["year", 2021]));
+console.log(make_car("Civics", "Sanobar", ["color", "yellow"], ["sunroof", true]));
+// ----------------------------------------------------------------------------------------------------------------------
