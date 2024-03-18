@@ -444,3 +444,35 @@ let pricesSet2 = [3000, 1500, 1800];
 let combinedPrices = [...pricesSet1, ...pricesSet2].sort((a, b) => a - b);
 console.log(combinedPrices);
 // ----------------------------------------------------------------------------------------------------------------------
+// Defines a function that accepts multiple hobbies as arguments
+function logHobbies(...hobbies: string[]) {
+    // Loops through each hobby in the array
+    hobbies.forEach(hobby => {
+        // Logs a statement for each hobby
+        console.log(`I enjoy ${hobby}.`);
+    });
+}
+
+// Calls the function with three hobbies
+logHobbies("Music", "Playing Games", "My Hard Work");
+// ----------------------------------------------------------------------------------------------------------------------
+// Using template literals to define a multiline string
+let myIdealDay = `My ideal day would involve:
+1. Early morning prayer.
+2. Each time is about pets time.
+3. Recently 12 hours fasting.`;
+
+// Logging the multiline string to the console
+console.log(myIdealDay);
+// ----------------------------------------------------------------------------------------------------------------------
+// Original function for calculating the area of a rectangle
+function calculateArea(width: number, height: number): number {
+    return width * height;
+}
+
+// Refactored into an arrow function
+let calculateAreaArrow = (width: number, height: number): number => width * height;
+
+// Example usage of the arrow function
+console.log(calculateAreaArrow(10, 100)); // Logs the area of the rectangle
+// ----------------------------------------------------------------------------------------------------------------------
