@@ -435,3 +435,39 @@ var calculateAreaArrow = function (width, height) { return width * height; };
 // Example usage of the arrow function
 console.log(calculateAreaArrow(10, 100)); // Logs the area of the rectangle
 // ----------------------------------------------------------------------------------------------------------------------
+// Sets up details about a smartphone
+let smartphone = {
+    make: "OPPO",
+    model: "Af17",
+    specs: {
+        storage: "10GB",
+        screenSize: "4.2 inches",
+        batteryLife: "14 hours"
+    }
+};
+// Shows what we've set up about the smartphone
+console.log(smartphone);
+// ----------------------------------------------------------------------------------------------------------------------
+// A list showing a programmer's skills in detail
+let developerSkills = {
+    languages: ["C++", "Rust", "CSS"],
+    frameworks: ["Action", "Singular", "Yahoo"],
+    tools: ["Fiverr", "Trick", "Greek"]
+};
+// Getting specific skills from the list
+let { languages, frameworks, tools } = developerSkills;
+// Showing a skill from each category
+console.log(`Language: ${languages[0]}, Framework: ${frameworks[0]}, Tool: ${tools[0]}`);
+// ----------------------------------------------------------------------------------------------------------------------
+// A way to make a flexible list
+function createObjectWithDynamicKey(key, value) {
+    var dynamicObject = {};
+    // Setting up a section in the list with a changeable name
+    dynamicObject[key] = value;
+    return dynamicObject;
+}
+// Using the flexible list setup for a user's preference
+var userPreference = createObjectWithDynamicKey("light", "light-screen");
+// Showing the user's choice
+console.log(userPreference);
+// ----------------------------------------------------------------------------------------------------------------------
