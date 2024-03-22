@@ -471,3 +471,104 @@ var userPreference = createObjectWithDynamicKey("light", "light-screen");
 // Showing the user's choice
 console.log(userPreference);
 // ----------------------------------------------------------------------------------------------------------------------
+// Starts with a list of numbers
+let numbers = [1, 2, 3, 4, 5];
+// Doubles each number
+let doubledNumbers = numbers.map(number => number * 2);
+// Shows the new list of doubled numbers
+console.log(doubledNumbers); // Output: [2, 4, 6, 8, 10]
+// This line takes each number, doubles it, and puts it in a new list.
+// ----------------------------------------------------------------------------------------------------------------------
+// A mixed bag of items
+let mixedArray = [1, "orange", 2, "papaya", true, "watermelon"];
+// Picks out only the words
+let stringsArray = mixedArray.filter(item => typeof item === "string");
+// Shows the list of just words
+console.log(stringsArray); // Output: ["orange", "papaya", "watermelon"]
+// This line checks each item: if it's a word, it goes into the new list.
+// ----------------------------------------------------------------------------------------------------------------------
+// A list of grades
+let grades = [88, 94, 72, 99, 53, 77];
+// Calculates the average grade
+let averageGrade = grades.reduce((total, grade) => total + grade, 0) / grades.length;
+// Shows the average grade
+console.log(averageGrade);
+// First, we add up all the grades. Then, we divide by how many grades there are to get the average.
+// ----------------------------------------------------------------------------------------------------------------------
+// This program calculates the average of all scores given
+function averageScore(...scores: number[]): number {
+// Adds all scores together and divides by the number of scores
+    let total = scores.reduce((sum, score) => sum + score, 0);
+    return total / scores.length;
+}
+// Example: finding the average of four scores
+console.log(averageScore(80, 90, 100, 70)); // Shows the average score
+// We add up all the scores, then divide by how many there are.
+// ----------------------------------------------------------------------------------------------------------------------
+// This program makes a function that adds a specific number
+function makeAdder(valueToAdd: number): (number) => number {
+    // This is the magic box. It takes a number and adds your special number to it
+    return function(number: number): number {
+        return number + valueToAdd;
+    };
+}
+// Making a magic box that adds 5
+let addFive = makeAdder(5);
+console.log(addFive(10)); // If we put 10 in the box, it gives us 15
+// We made a function (magic box) that adds 5 to any number.
+// ----------------------------------------------------------------------------------------------------------------------
+// This profile sets itself up and can share info about the user
+let userProfile = (function() {
+// The user's details are kept inside
+    let name = "Eda";
+    let age = 24;
+    // This part shares the user's details
+    return {
+        displayInfo: function() {
+            console.log(`Name: ${name}, Age: ${age}`);
+        }
+    };
+})();
+// Asking the profile to tell us about the user
+userProfile.displayInfo(); // It says the user's name and age
+// We made a self-setup profile that can talk about the user.
+// ----------------------------------------------------------------------------------------------------------------------
+// Making a list (enum) for different types of vehicles
+var VehicleType;
+(function (VehicleType) {
+    VehicleType[VehicleType["Car"] = 0] = "Car";
+    VehicleType[VehicleType["Truck"] = 1] = "Truck";
+    VehicleType[VehicleType["Motorcycle"] = 2] = "Motorcycle";
+})(VehicleType || (VehicleType = {}));
+// Showing one type of vehicle from the list
+console.log(VehicleType.Car); // It shows 0 because enums start counting from 0
+// Here, we're just checking what number the Car category got in our list.
+// ----------------------------------------------------------------------------------------------------------------------
+"use strict";
+// Filling in the blueprint with an example student
+let student = {
+    name: "Maria",
+    age: 19,
+    courses: ["Physics", "Social Studies", "English"]
+};
+// Showing the student's information
+console.log(student);
+// We're using the blueprint to make sure our student has a name, age, and list of courses.// Welcome to the TypeScript Playground, this is a website
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+"use strict";
+// Describing a circle using our Shape type
+let circle = {
+    kind: "circle",
+    radius: 10
+};
+// Describing a rectangle using our Shape type
+let rectangle = {
+    kind: "rectangle",
+    width: 15,
+    height: 25
+};
+// Showing what we described
+console.log(circle); // Here's the circle
+console.log(rectangle); // And here's the rectangle
+// We made a flexible program that can describe different shapes in detail.
+// ----------------------------------------------------------------------------------------------------------------------
